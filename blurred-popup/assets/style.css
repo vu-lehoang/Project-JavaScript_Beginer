@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background: url("./background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 0.7s;
+}
+
+h1{
+    font-size: 60px;
+    color: #fff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.btn{
+    padding: 12px 20px;
+    width: 200px;
+    cursor: pointer;
+    background-color: #fed800;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.btn:hover{
+    filter: brightness(0.8);
+}
+.active.container{
+    filter: blur(5px) brightness(0.7)
+}
+.popup-container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 600px;
+    height: 300px;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url("./formbg.jpg") ;
+    background-size: cover;
+    border-radius: 8px;
+    opacity: 1;
+    transition: all 0.7s;
+}
+h4{
+    font-size: 30px;
+    margin: 25px 0;
+    font-family: sans-serif;
+    color: #00aeff;
+}
+label{
+    color: #00aeff;
+    font-family: sans-serif;
+}
+.popup-btn{
+    background-color: #ff4500;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    cursor: pointer;
+    border:0 ;
+    border-radius: 8px;
+    color: #fff;
+}
+.popup-btn:hover{
+    filter: brightness(0.8);
+}
+.input{
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 0;
+}
+.input::placeholder{
+    color: lightgray;
+}
+.close-icon{
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: #ff4500;
+}
+.active.popup-container{
+    visibility: hidden;
+    opacity: 0;
+    top: 10%;
+}
