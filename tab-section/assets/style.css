@@ -61,12 +61,14 @@ img {
 /* hide content */
 .content {
     display: none;
+
 }
 .button.live {
     background: #ffe5e2;
 }
 .content.live {
     display: block;
+  
 }
 
 @media (min-width: 992px) {
@@ -80,3 +82,4 @@ img {
     column-gap: 2rem;
     }
 }
+
